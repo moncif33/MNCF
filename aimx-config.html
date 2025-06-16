@@ -13,14 +13,24 @@
       padding: 0;
     }
     .header {
-      display: flex;
+      display: grid;
+      grid-template-columns:200px 1fr;
       align-items: center;
       padding: 15px 20px;
       background: #1a1a1a;
       border-bottom: 2px solid #00ffc3;
+      .headertext{
+font-size:35px;
+        color:#00ffc3;
+        
+        
+
+        
+      }
     }
     .header img {
       height: 100px;
+    padding: 20px;
     }
     .container {
       max-width: 900px;
@@ -68,6 +78,7 @@
 
   <div class="header">
     <img src="photo_2025-06-16_19-21-41.jpg" alt="AIMX Logo">
+    <p class=" headertext"> AimXClips </p>
   </div>
 
   <div class="container">
