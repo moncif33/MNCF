@@ -1,170 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AIMX Store | Dominate Your Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIMX Store - Dominate Your Game</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #0e0e0e, #141414);
+      font-family: 'Segoe UI', sans-serif;
       color: #e0e0e0;
+      background: linear-gradient(120deg, #0f0f0f, #101820);
       overflow-x: hidden;
     }
-
-    .animated-bg {
-      position: fixed;
+    header {
+      background: url('https://images.unsplash.com/photo-1608379632536-ec7b33cfb173?fit=crop&w=1950&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      color: #fff;
+    }
+    header::after {
+      content: "";
+      position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      z-index: -1;
-      background: radial-gradient(circle, #00ffc366 1px, transparent 1px);
-      background-size: 50px 50px;
-      animation: move 20s linear infinite;
-    }
-    @keyframes move {
-      0% { background-position: 0 0; }
-      100% { background-position: 100px 100px; }
-    }
-
-    header {
-      text-align: center;
-      padding: 100px 20px 60px;
-    }
-    header img {
-      width: 120px;
-      margin-bottom: 20px;
+      background: rgba(0,0,0,0.7);
     }
     header h1 {
-      font-size: 3rem;
-      color: #00ffc3;
-      margin-bottom: 10px;
+      font-size: 4rem;
+      z-index: 1;
     }
     header p {
-      font-size: 1.2rem;
-      color: #ccc;
+      font-size: 1.3rem;
+      z-index: 1;
     }
-
+    .section {
+      padding: 100px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
     .product {
-      background: #1a1a1a;
-      border-radius: 12px;
-      margin: 40px auto;
-      max-width: 800px;
+      background: #1c1c1c;
+      border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 0 20px #00ffc333;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
     }
     .product img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
       margin-bottom: 15px;
     }
     .product h2 {
       color: #00ffc3;
-      margin-bottom: 15px;
-    }
-    .product p {
-      margin-bottom: 15px;
-      font-size: 1rem;
+      margin-bottom: 10px;
     }
     .price {
-      font-size: 1.2rem;
-      color: #ffd700;
-      margin-bottom: 15px;
       font-weight: bold;
+      color: #ffd700;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
     }
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      background-color: #00ffc3;
-      color: #0e0e0e;
-      text-decoration: none;
-      font-weight: bold;
+      background: #00ffc3;
+      color: #000;
+      padding: 10px 20px;
       border-radius: 5px;
-      transition: 0.3s;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
     }
     .btn:hover {
-      background-color: #00e6b3;
+      background: #00e6b3;
     }
-
-    .section {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .section h3 {
-      color: #00ffc3;
-      margin-bottom: 10px;
-    }
-    .section p {
-      margin-bottom: 10px;
-      color: #ccc;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
+    .stats {
+      display: flex;
+      justify-content: space-around;
       margin-top: 60px;
-      padding-bottom: 30px;
     }
-    .footer a {
+    .stat {
+      text-align: center;
+    }
+    .stat h3 {
+      font-size: 3rem;
       color: #00ffc3;
-      margin: 0 10px;
-      text-decoration: none;
+      margin: 0;
     }
-    .footer a:hover {
-      text-decoration: underline;
+    .stat p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    footer a {
+      color: #00ffc3;
+      text-decoration: none;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
 
-  <div class="animated-bg"></div>
+<header>
+  <div>
+    <h1>AIMX Store 🎮🔥</h1>
+    <p>Precision. Performance. Dominate.</p>
+  </div>
+</header>
 
-  <header>
-    <img src="photo_2025-06-16_19-21-41.jpg" alt="AIMX Logo">
-    <h1>AIMX Store</h1>
-    <p>🎯 Boost Your Aim. Crush Your Enemies. Play Smarter.</p>
-  </header>
+<section class="section">
+  <h2 style="text-align:center; color:#00ffc3;">Our Products</h2>
 
   <div class="product">
     <img src="EDFC446A-DE33-4B3C-BA68-41626BC877EA.png" alt="reWASD Config">
-    <h2>🔥 AIMX Config for Warzone 🎮</h2>
-    <p>Take your Warzone performance to the next level with our exclusive <strong>custom reWASD configuration</strong>. 🎯 Enjoy ultra-smooth aim, controller-like movement on your keyboard & mouse setup – without breaking any rules.</p>
-    <p class="price">$6.19 <span style="text-decoration: line-through; color: #777;">$14.99</span></p>
-    <a href="aimx-config.html" class="btn">View Product 🚀</a>
+    <h2>AIMX Config for Warzone 🎯</h2>
+    <p>Custom configuration for competitive players. Simulates controller input via keyboard & mouse – smooth, fast, and fully optimized for victory.</p>
+    <p class="price">$6.19 <span style="text-decoration:line-through; color:#777;">$14.99</span></p>
+    <a href="aimx-config.html" class="btn">View Product</a>
   </div>
 
   <div class="product">
     <img src="608B4E6C-441C-4DF4-A72C-49E60B728AC7.png" alt="FPS Boost Pack">
-    <h2>⚡ FPS Boost + Latency Pack 🖥️</h2>
-    <p>Boost your PC’s performance in games with pro-level tweaks and optimizations for more frames, lower input delay, and cleaner gameplay. 💻 Perfect for competitive gamers who want the best out of their setup.</p>
-    <p class="price">$3.99 <span style="text-decoration: line-through; color: #777;">$7.99</span></p>
-    <a href="fps-boost.html" class="btn">Coming Soon ⏳</a>
+    <h2>FPS Boost + Latency Pack 🚀</h2>
+    <p>Advanced PC tweaks for maximum FPS & lowest latency. Dominate your matches with professional system configurations.</p>
+    <p class="price">$3.99 <span style="text-decoration:line-through; color:#777;">$7.99</span></p>
+    <a href="fps-boost.html" class="btn">Coming Soon</a>
   </div>
 
-  <div class="section">
-    <h3>✅ Why Choose AIMX?</h3>
-    <p>⚙️ 100% Legit Setup (No hacks, no shady software)</p>
-    <p>📜 Includes PDF guide + full installation support</p>
-    <p>💬 Need help? We’ve got your back with priority support</p>
+  <div class="stats">
+    <div class="stat">
+      <h3 id="sales">0</h3>
+      <p>Products Sold 🛒</p>
+    </div>
+    <div class="stat">
+      <h3 id="subscribers">0</h3>
+      <p>YouTube Subscribers 📺</p>
+    </div>
+    <div class="stat">
+      <h3>100%</h3>
+      <p>Customer Satisfaction ✅</p>
+    </div>
   </div>
+</section>
 
-  <div class="section">
-    <h3>📦 What You Get:</h3>
-    <ul>
-      <li>✔️ Fully customizable reWASD config</li>
-      <li>✔️ Controller-like precision on keyboard/mouse</li>
-      <li>✔️ Installation guide PDF included</li>
-      <li>✔️ Support for all questions & troubleshooting</li>
-    </ul>
-  </div>
+<footer>
+  <p>&copy; 2025 AIMX Store. All rights reserved.</p>
+  <a href="privacy.html">Privacy Policy</a> |
+  <a href="terms.html">Terms & Conditions</a> |
+  <a href="refund.html">Refund Policy</a>
+</footer>
 
-  <div class="footer">
-    <a href="privacy.html">Privacy Policy</a> |
-    <a href="terms.html">Terms & Conditions</a> |
-    <a href="refund.html">Refund Policy</a>
-  </div>
+<script>
+  // Animated Stats Count
+  const animateValue = (id, start, end, duration) => {
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? 1 : -1;
+    let stepTime = Math.abs(Math.floor(duration / range));
+    const obj = document.getElementById(id);
+    const timer = setInterval(() => {
+      current += increment;
+      obj.textContent = current;
+      if (current == end) clearInterval(timer);
+    }, stepTime);
+  };
+  animateValue("sales", 0, 53, 3000); // Example sales
+  animateValue("subscribers", 0, 750, 3000); // Example subscribers
+</script>
 
 </body>
 </html>
