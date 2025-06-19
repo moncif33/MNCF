@@ -1,204 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>AIMX Store – Game Like a Pro</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(120deg, #0f0f0f, #050505);
-    color: #e0e0e0;
-    overflow-x: hidden;
-  }
-  header {
-    background: linear-gradient(90deg, #00ffc3, #007c60);
-    padding: 30px 0;
-    text-align: center;
-    color: #000;
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-  .hero {
-    background: url('https://images.unsplash.com/photo-1621201460105-644def7a9c0c?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
-    padding: 150px 20px;
-    text-align: center;
-    color: #fff;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 20px #00ffc3;
-  }
-  .hero p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-  }
-  .section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  .product {
-    background: #1c1c1c;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 60px;
-    box-shadow: 0 0 20px #00ffc3;
-  }
-  .product img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .product h2 {
-    color: #00ffc3;
-    margin-top: 15px;
-  }
-  .price {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #ffd700;
-    margin: 10px 0;
-  }
-  .btn {
-    display: inline-block;
-    background: #00ffc3;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-  .btn:hover {
-    background: #00e6b3;
-  }
-  .feature {
-    margin-top: 30px;
-  }
-  .feature p {
-    margin-bottom: 8px;
-  }
-  .about, .stats, .footer {
-    background: #121212;
-    padding: 60px 20px;
-    margin-top: 60px;
-  }
-  .about h2, .stats h2, .footer h2 {
-    color: #00ffc3;
-    margin-bottom: 20px;
-  }
-  .stats {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .stat {
-    margin: 10px 20px;
-  }
-  .stat h3 {
-    color: #ffd700;
-    font-size: 2rem;
-  }
-  .footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #888;
-  }
-  .footer a {
-    color: #00ffc3;
-    margin: 0 8px;
-    text-decoration: none;
-  }
-  .footer a:hover {
-    text-decoration: underline;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIMX Store - Dominate Warzone</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e0e;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    /* Background animated dots */
+    .background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(#00ffc3 1px, transparent 1px);
+      background-size: 20px 20px;
+      animation: moveDots 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveDots {
+      0% { background-position: 0 0; }
+      100% { background-position: 100px 100px; }
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(rgba(14,14,14,0.8), rgba(14,14,14,0.8));
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffc3;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .product {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px #00ffc3;
+    }
+
+    .product h2 {
+      color: #00ffc3;
+      margin-bottom: 10px;
+    }
+
+    .product .price {
+      color: #ffd700;
+      font-size: 1.4rem;
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00ffc3;
+      color: #0e0e0e;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .about, .stats {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .about h2, .stats h2 {
+      color: #00ffc3;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .stat {
+      text-align: center;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,255,195,0.3);
+      width: 250px;
+    }
+
+    .stat h3 {
+      color: #ffd700;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .footer a {
+      color: #00ffc3;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
+  <div class="background"></div>
 
-<header>AIMX STORE 🕹️🎯</header>
-
-<section class="hero">
-  <h1>🔥 DOMINATE YOUR GAME 🔥</h1>
-  <p>Next-Level Performance for Warzone Players – No Cheats, Just Pure Skill ⚡</p>
-</section>
-
-<section class="section">
+  <header>
+    <h1>Welcome to AIMX Store 🎯</h1>
+    <p>Dominate your gameplay with our optimized configs and game guides. No cheats. No hacks. Just pure skill and better control with <strong>reWASD Configs</strong>.</p>
+  </header>
 
   <div class="product">
-    <img src="EDFC446A-DE33-4B3C-BA68-41626BC877EA.png" alt="reWASD Config">
-    <h2>🎯 reWASD CONFIG – The Ultimate Aim Assist Simulator 🎮</h2>
-    <p>This isn’t your average config. Built from scratch for **competitive Warzone** players who want the **controller aim-assist** feel on mouse & keyboard.</p>
-    <div class="feature">
-      <p>✅ Smooth movement, better tracking</p>
-      <p>✅ Legit, safe & TOS-friendly</p>
-      <p>✅ Realistic Aim Assist simulation (NOT a hack)</p>
-      <p>✅ PDF setup guide included 📄</p>
-      <p>✅ Support available anytime 💬</p>
-    </div>
-    <div class="price">$6.19 <span style="text-decoration: line-through; color: #888;">$14.99</span></div>
+    <h2>🎮 reWASD Config – Warzone Edition</h2>
+    <p>Stop struggling with clunky movement. Unlock smooth, precise gameplay on mouse & keyboard – simulating the feel of a pro controller setup. Fully optimized for Warzone. 🏆</p>
+    <p>✅ Realistic Aim Assist<br>✅ Clean Keybinds<br>✅ Easy to Install – PDF Guide Included</p>
+    <p class="price">$6.19 <span style="text-decoration: line-through; color:#888;">$14.99</span></p>
     <a href="aimx-config.html" class="btn">View Product</a>
   </div>
 
   <div class="product">
-    <img src="608B4E6C-441C-4DF4-A72C-49E60B728AC7.png" alt="FPS Boost">
-    <h2>⚡ FPS BOOST + LATENCY PACK ⚡</h2>
-    <p>Optimize your setup for peak performance. FPS tweaks, latency fixes, smoother frames – everything a serious gamer needs 🖥️🎮</p>
-    <div class="feature">
-      <p>✅ Increase FPS by up to 30%</p>
-      <p>✅ Reduce input lag & system delay</p>
-      <p>✅ Includes full guide PDF 📄</p>
-      <p>✅ Advanced Windows optimization</p>
+    <h2>⚡ FPS Boost + Latency Pack (Coming Soon)</h2>
+    <p>Want smoother frames? This advanced guide improves FPS, reduces latency, and helps your system run games like a beast. Perfect for competitive gamers. 🔧</p>
+    <p class="price">$3.99 <span style="text-decoration: line-through; color:#888;">$7.99</span></p>
+    <a href="fps-boost.html" class="btn">Coming Soon</a>
+  </div>
+
+  <section class="about">
+    <h2>Who We Are 👑</h2>
+    <p>Welcome to AIMX Store. I’m Moncif, also known as <strong>AimXClips</strong> on YouTube with over <strong>[Add subscriber count]</strong> subscribers and a loyal audience of competitive gamers. <br> I've spent years tweaking configs, optimizing systems, and building setups that work. Now I’m sharing the edge with you. 🎮</p>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <h3>+54</h3>
+      <p>Products Sold</p>
     </div>
-    <div class="price">COMING SOON</div>
-    <a href="fps-boost.html" class="btn" style="background:#555; cursor: not-allowed;">Coming Soon</a>
+    <div class="stat">
+      <h3>4.9★</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+    <div class="stat">
+      <h3>+12,318</h3>
+      <p>YouTube Views</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Why Choose Us? 💼</h2>
+    <p>⚠️ 100% Safe – No cheats, no hacks. <br>📜 Includes full guides.<br>💻 Works with reWASD – fully legit. <br>🖱️ Made by a gamer, for gamers.</p>
+  </section>
+
+  <div class="footer">
+    <h2>Need Help?</h2>
+    <p>Contact me anytime at <a href="mailto:support@moncif.store">support@moncif.store</a></p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="terms.html">Terms & Conditions</a> | 
+      <a href="refund.html">Refund Policy</a>
+    </p>
   </div>
 
-</section>
-
-<section class="about">
-  <h2>Who We Are 👑</h2>
-  <p>Welcome to AIMX Store. I’m Moncif, also known as <strong>AimXClips</strong> on YouTube with over **[add your subscriber count here]** subscribers and a growing audience of competitive gamers. I’ve spent years tweaking configs, optimizing systems, and helping players level up their gaming setup legitimately.</p>
-</section>
-
-<section class="stats">
-  <div class="stat">
-    <h3>+54</h3>
-    <p>Products Sold</p>
-  </div>
-  <div class="stat">
-    <h3>4.9★</h3>
-    <p>Customer Satisfaction</p>
-  </div>
-  <div class="stat">
-    <h3>+12,318</h3>
-    <p>YouTube view</p>
-  </div>
-</section>
-
-<section class="about">
-  <h2>🔒 100% Secure</h2>
-  <p>No shady tools. No hacks. No risks. Just optimized configs and guides to make your experience better.</p>
-</section>
-
-<div class="footer">
-  <h2>Need Help?</h2>
-  <p>Contact us anytime at <a href="mailto:support@moncif.store">support@moncif.store</a></p>
-  <p>
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="terms.html">Terms & Conditions</a> | 
-    <a href="refund.html">Refund Policy</a>
-  </p>
-</div>
-
-<script>
-  window.addEventListener('scroll', function () {
-    document.querySelector('header').style.boxShadow = window.scrollY > 50 ? '0 2px 10px #00ffc3' : 'none';
-  });
-</script>
-
+  <script>
+    window.addEventListener('scroll', function () {
+      document.querySelector('header').style.boxShadow = window.scrollY > 50 ? '0 2px 10px #00ffc3' : 'none';
+    });
+  </script>
 </body>
 </html>
