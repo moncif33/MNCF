@@ -1,185 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AIMX Store - Dominate Your Game</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      color: #e0e0e0;
-      background: linear-gradient(120deg, #0f0f0f, #101820);
-      overflow-x: hidden;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1608379632536-ec7b33cfb173?fit=crop&w=1950&q=80') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      text-align: center;
-      color: #fff;
-    }
-    header::after {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.7);
-    }
-    header h1 {
-      font-size: 4rem;
-      z-index: 1;
-    }
-    header p {
-      font-size: 1.3rem;
-      z-index: 1;
-    }
-    .section {
-      padding: 100px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    .product {
-      background: #1c1c1c;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 40px;
-      box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
-      transition: transform 0.3s ease;
-    }
-    .product:hover {
-      transform: translateY(-5px);
-    }
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    .product h2 {
-      color: #00ffc3;
-      margin-bottom: 10px;
-    }
-    .price {
-      font-weight: bold;
-      color: #ffd700;
-      margin-bottom: 10px;
-      font-size: 1.3rem;
-    }
-    .btn {
-      display: inline-block;
-      background: #00ffc3;
-      color: #000;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #00e6b3;
-    }
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      margin-top: 60px;
-    }
-    .stat {
-      text-align: center;
-    }
-    .stat h3 {
-      font-size: 3rem;
-      color: #00ffc3;
-      margin: 0;
-    }
-    .stat p {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #aaa;
-    }
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    footer a {
-      color: #00ffc3;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AIMX Store – Game Like a Pro</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #0f0f0f, #050505);
+    color: #e0e0e0;
+    overflow-x: hidden;
+  }
+  header {
+    background: linear-gradient(90deg, #00ffc3, #007c60);
+    padding: 30px 0;
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .hero {
+    background: url('https://images.unsplash.com/photo-1621201460105-644def7a9c0c?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    padding: 150px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 20px #00ffc3;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+  .section {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  .product {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 20px #00ffc3;
+  }
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .product h2 {
+    color: #00ffc3;
+    margin-top: 15px;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #ffd700;
+    margin: 10px 0;
+  }
+  .btn {
+    display: inline-block;
+    background: #00ffc3;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  .btn:hover {
+    background: #00e6b3;
+  }
+  .feature {
+    margin-top: 30px;
+  }
+  .feature p {
+    margin-bottom: 8px;
+  }
+  .about, .stats, .footer {
+    background: #121212;
+    padding: 60px 20px;
+    margin-top: 60px;
+  }
+  .about h2, .stats h2, .footer h2 {
+    color: #00ffc3;
+    margin-bottom: 20px;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .stat {
+    margin: 10px 20px;
+  }
+  .stat h3 {
+    color: #ffd700;
+    font-size: 2rem;
+  }
+  .footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+  }
+  .footer a {
+    color: #00ffc3;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
 
-<header>
-  <div>
-    <h1>AIMX Store 🎮🔥</h1>
-    <p>Precision. Performance. Dominate.</p>
-  </div>
-</header>
+<header>AIMX STORE 🕹️🎯</header>
+
+<section class="hero">
+  <h1>🔥 DOMINATE YOUR GAME 🔥</h1>
+  <p>Next-Level Performance for Warzone Players – No Cheats, Just Pure Skill ⚡</p>
+</section>
 
 <section class="section">
-  <h2 style="text-align:center; color:#00ffc3;">Our Products</h2>
 
   <div class="product">
     <img src="EDFC446A-DE33-4B3C-BA68-41626BC877EA.png" alt="reWASD Config">
-    <h2>AIMX Config for Warzone 🎯</h2>
-    <p>Custom configuration for competitive players. Simulates controller input via keyboard & mouse – smooth, fast, and fully optimized for victory.</p>
-    <p class="price">$6.19 <span style="text-decoration:line-through; color:#777;">$14.99</span></p>
+    <h2>🎯 reWASD CONFIG – The Ultimate Aim Assist Simulator 🎮</h2>
+    <p>This isn’t your average config. Built from scratch for **competitive Warzone** players who want the **controller aim-assist** feel on mouse & keyboard.</p>
+    <div class="feature">
+      <p>✅ Smooth movement, better tracking</p>
+      <p>✅ Legit, safe & TOS-friendly</p>
+      <p>✅ Realistic Aim Assist simulation (NOT a hack)</p>
+      <p>✅ PDF setup guide included 📄</p>
+      <p>✅ Support available anytime 💬</p>
+    </div>
+    <div class="price">$6.19 <span style="text-decoration: line-through; color: #888;">$14.99</span></div>
     <a href="aimx-config.html" class="btn">View Product</a>
   </div>
 
   <div class="product">
-    <img src="608B4E6C-441C-4DF4-A72C-49E60B728AC7.png" alt="FPS Boost Pack">
-    <h2>FPS Boost + Latency Pack 🚀</h2>
-    <p>Advanced PC tweaks for maximum FPS & lowest latency. Dominate your matches with professional system configurations.</p>
-    <p class="price">$3.99 <span style="text-decoration:line-through; color:#777;">$7.99</span></p>
-    <a href="fps-boost.html" class="btn">Coming Soon</a>
+    <img src="608B4E6C-441C-4DF4-A72C-49E60B728AC7.png" alt="FPS Boost">
+    <h2>⚡ FPS BOOST + LATENCY PACK ⚡</h2>
+    <p>Optimize your setup for peak performance. FPS tweaks, latency fixes, smoother frames – everything a serious gamer needs 🖥️🎮</p>
+    <div class="feature">
+      <p>✅ Increase FPS by up to 30%</p>
+      <p>✅ Reduce input lag & system delay</p>
+      <p>✅ Includes full guide PDF 📄</p>
+      <p>✅ Advanced Windows optimization</p>
+    </div>
+    <div class="price">COMING SOON</div>
+    <a href="#" class="btn" style="background:#555; cursor: not-allowed;">Coming Soon</a>
   </div>
 
-  <div class="stats">
-    <div class="stat">
-      <h3 id="sales">0</h3>
-      <p>Products Sold 🛒</p>
-    </div>
-    <div class="stat">
-      <h3 id="subscribers">0</h3>
-      <p>YouTube Subscribers 📺</p>
-    </div>
-    <div class="stat">
-      <h3>100%</h3>
-      <p>Customer Satisfaction ✅</p>
-    </div>
+</section>
+
+<section class="about">
+  <h2>Who We Are 👑</h2>
+  <p>Welcome to AIMX Store. I’m Moncif, also known as <strong>AimXClips</strong> on YouTube with over **[add your subscriber count here]** subscribers and a growing audience of competitive gamers. I’ve spent years tweaking configs, optimizing systems, and helping players level up their gaming setup legitimately.</p>
+</section>
+
+<section class="stats">
+  <div class="stat">
+    <h3>+50</h3>
+    <p>Products Sold</p>
+  </div>
+  <div class="stat">
+    <h3>4.9★</h3>
+    <p>Customer Satisfaction</p>
+  </div>
+  <div class="stat">
+    <h3>+10K</h3>
+    <p>Community Followers</p>
   </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 AIMX Store. All rights reserved.</p>
-  <a href="privacy.html">Privacy Policy</a> |
-  <a href="terms.html">Terms & Conditions</a> |
-  <a href="refund.html">Refund Policy</a>
-</footer>
+<section class="about">
+  <h2>🔒 100% Secure</h2>
+  <p>No shady tools. No hacks. No risks. Just optimized configs and guides to make your experience better.</p>
+</section>
+
+<div class="footer">
+  <h2>Need Help?</h2>
+  <p>Contact us anytime at <a href="mailto:support@moncif.store">support@moncif.store</a></p>
+  <p>
+    <a href="privacy.html">Privacy Policy</a> | 
+    <a href="terms.html">Terms & Conditions</a> | 
+    <a href="refund.html">Refund Policy</a>
+  </p>
+</div>
 
 <script>
-  // Animated Stats Count
-  const animateValue = (id, start, end, duration) => {
-    let range = end - start;
-    let current = start;
-    let increment = end > start ? 1 : -1;
-    let stepTime = Math.abs(Math.floor(duration / range));
-    const obj = document.getElementById(id);
-    const timer = setInterval(() => {
-      current += increment;
-      obj.textContent = current;
-      if (current == end) clearInterval(timer);
-    }, stepTime);
-  };
-  animateValue("sales", 0, 53, 3000); // Example sales
-  animateValue("subscribers", 0, 750, 3000); // Example subscribers
+  window.addEventListener('scroll', function () {
+    document.querySelector('header').style.boxShadow = window.scrollY > 50 ? '0 2px 10px #00ffc3' : 'none';
+  });
 </script>
 
 </body>
